@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) UIButton *hiddenorshow;
 ///
 @property (strong, nonatomic) DrawView *drowview;
 
@@ -23,9 +24,29 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.title = @"GraffitiBoardDemo";
+   
+   
+    _hiddenorshow = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
+    UIImage *showImg = [UIImage imageNamed:@"drow_add"];
+    UIImage *hiddenImg = [UIImage imageNamed:@"shut_down"];
+    [_hiddenorshow setImage:showImg forState:UIControlStateNormal];
+    [_hiddenorshow setImage:hiddenImg forState:UIControlStateSelected];
+    [_hiddenorshow addTarget:self action:@selector(ClickConRightBarBtn:)forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:_hiddenorshow];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+-(void)ClickConRightBarBtn:(UIButton *)sender
+{
+    sender.selected = !sender.selected;
     
-    _drowview = [[DrawView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    [self.view addSubview:_drowview];
+    if(sender.selected == YES)
+    {
+        [self.drowview  showDrawView];
+    }else
+    {
+        [_drowview  hiddenDrawView];
+    }
 }
 
 
@@ -34,5 +55,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+// MARK: - lazy
+-(DrawView *)drowview
+{
+    if(_drowview == nil)
+    {
+        _drowview = [[DrawView alloc]initWithFrame:self.view.bounds];
+        [self.view addSubview:_drowview];
+        [_drowview setHidden:YES];
+    }
+    return _drowview;
+}
 
 @end
