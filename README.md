@@ -8,5 +8,15 @@
 _drowview = [[DrawView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_drowview];
 ```
-![](https://github.com/dengfeng520/GraffitiBoardDemo/edit/master/QRCode.png)
+![](https://github.com/dengfeng520/GraffitiBoardDemo/edit/master/GraffitiBoardDemo.gif)
+
 同时，demo中也提供了显示和隐藏动画；
+
+```
+
+//hidden
+ [_drowview  hiddenDrawView];
+ //show
+ [_drowview  showDrawView];
+ 
+```
