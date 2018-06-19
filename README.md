@@ -8,7 +8,7 @@
 _drowview = [[DrawView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_drowview];
 ```
-![](https://github.com/dengfeng520/GraffitiBoardDemo/blob/master/GraffitiBoardDemo.gif)
+
 
 同时，demo中也提供了显示和隐藏动画；
 
@@ -20,3 +20,6 @@ _drowview = [[DrawView alloc]initWithFrame:self.view.bounds];
  [_drowview  showDrawView];
  
 ```
+>效果图
+
+![](https://github.com/dengfeng520/GraffitiBoardDemo/blob/master/GraffitiBoardDemo.gif)
