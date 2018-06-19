@@ -26,6 +26,8 @@
     self.title = @"GraffitiBoardDemo";
    
    
+    _drowview = [self drowview];
+    
     _hiddenorshow = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
     UIImage *showImg = [UIImage imageNamed:@"drow_add"];
     UIImage *hiddenImg = [UIImage imageNamed:@"shut_down"];
@@ -42,10 +44,11 @@
     
     if(sender.selected == YES)
     {
-        [self.drowview  showDrawView];
+       [_drowview  hiddenDrawView];
+        
     }else
     {
-        [_drowview  hiddenDrawView];
+       [_drowview  showDrawView];
     }
 }
 
@@ -62,7 +65,6 @@
     {
         _drowview = [[DrawView alloc]initWithFrame:self.view.bounds];
         [self.view addSubview:_drowview];
-        [_drowview setHidden:YES];
     }
     return _drowview;
 }
