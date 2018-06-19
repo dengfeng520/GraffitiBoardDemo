@@ -13,26 +13,11 @@
 		1CDB1BAE20D8C3D6005D8C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CDB1BAD20D8C3D6005D8C32 /* Assets.xcassets */; };
 		1CDB1BB120D8C3D6005D8C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDB1BAF20D8C3D6005D8C32 /* LaunchScreen.storyboard */; };
 		1CDB1BB420D8C3D6005D8C32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB1BB320D8C3D6005D8C32 /* main.m */; };
-		1CDB1BBE20D8C3D6005D8C32 /* GraffitiBoardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB1BBD20D8C3D6005D8C32 /* GraffitiBoardDemoTests.m */; };
-		1CDB1BC920D8C3D6005D8C32 /* GraffitiBoardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB1BC820D8C3D6005D8C32 /* GraffitiBoardDemoUITests.m */; };
+		1CDB1BDE20D8C4A9005D8C32 /* DrawViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB1BDA20D8C4A9005D8C32 /* DrawViewModel.m */; };
+		1CDB1BDF20D8C4A9005D8C32 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB1BDC20D8C4A9005D8C32 /* DrawView.m */; };
+		1CDB1BE020D8C4A9005D8C32 /* GraffitiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB1BDD20D8C4A9005D8C32 /* GraffitiBoardView.m */; };
+		1CDB1BE320D8C89C005D8C32 /* RootNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB1BE220D8C89C005D8C32 /* RootNavViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1CDB1BBA20D8C3D6005D8C32 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1CDB1B9920D8C3D2005D8C32 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CDB1BA020D8C3D2005D8C32;
-			remoteInfo = GraffitiBoardDemo;
-		};
-		1CDB1BC520D8C3D6005D8C32 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1CDB1B9920D8C3D2005D8C32 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CDB1BA020D8C3D2005D8C32;
-			remoteInfo = GraffitiBoardDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1CDB1BA120D8C3D2005D8C32 /* GraffitiBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraffitiBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,30 +30,22 @@
 		1CDB1BB020D8C3D6005D8C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CDB1BB220D8C3D6005D8C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CDB1BB320D8C3D6005D8C32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1CDB1BB920D8C3D6005D8C32 /* GraffitiBoardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitiBoardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDB1BBD20D8C3D6005D8C32 /* GraffitiBoardDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraffitiBoardDemoTests.m; sourceTree = "<group>"; };
 		1CDB1BBF20D8C3D6005D8C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CDB1BC420D8C3D6005D8C32 /* GraffitiBoardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitiBoardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDB1BC820D8C3D6005D8C32 /* GraffitiBoardDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraffitiBoardDemoUITests.m; sourceTree = "<group>"; };
 		1CDB1BCA20D8C3D6005D8C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CDB1BD820D8C4A9005D8C32 /* DrawViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewModel.h; sourceTree = "<group>"; };
+		1CDB1BD920D8C4A9005D8C32 /* GraffitiBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraffitiBoardView.h; sourceTree = "<group>"; };
+		1CDB1BDA20D8C4A9005D8C32 /* DrawViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewModel.m; sourceTree = "<group>"; };
+		1CDB1BDB20D8C4A9005D8C32 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		1CDB1BDC20D8C4A9005D8C32 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		1CDB1BDD20D8C4A9005D8C32 /* GraffitiBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraffitiBoardView.m; sourceTree = "<group>"; };
+		1CDB1BE120D8C89C005D8C32 /* RootNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavViewController.h; sourceTree = "<group>"; };
+		1CDB1BE220D8C89C005D8C32 /* RootNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1CDB1B9E20D8C3D2005D8C32 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1CDB1BB620D8C3D6005D8C32 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1CDB1BC120D8C3D6005D8C32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				1CDB1BA120D8C3D2005D8C32 /* GraffitiBoardDemo.app */,
-				1CDB1BB920D8C3D6005D8C32 /* GraffitiBoardDemoTests.xctest */,
-				1CDB1BC420D8C3D6005D8C32 /* GraffitiBoardDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,11 +76,14 @@
 		1CDB1BA320D8C3D2005D8C32 /* GraffitiBoardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1CDB1BD720D8C492005D8C32 /* DrawViewModel */,
 				1CDB1BA420D8C3D2005D8C32 /* AppDelegate.h */,
 				1CDB1BA520D8C3D2005D8C32 /* AppDelegate.m */,
 				1CDB1BA720D8C3D2005D8C32 /* ViewController.h */,
 				1CDB1BA820D8C3D2005D8C32 /* ViewController.m */,
 				1CDB1BAA20D8C3D2005D8C32 /* Main.storyboard */,
+				1CDB1BE120D8C89C005D8C32 /* RootNavViewController.h */,
+				1CDB1BE220D8C89C005D8C32 /* RootNavViewController.m */,
 				1CDB1BAD20D8C3D6005D8C32 /* Assets.xcassets */,
 				1CDB1BAF20D8C3D6005D8C32 /* LaunchScreen.storyboard */,
 				1CDB1BB220D8C3D6005D8C32 /* Info.plist */,
@@ -132,6 +110,19 @@
 			path = GraffitiBoardDemoUITests;
 			sourceTree = "<group>";
 		};
+		1CDB1BD720D8C492005D8C32 /* DrawViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB1BDB20D8C4A9005D8C32 /* DrawView.h */,
+				1CDB1BDC20D8C4A9005D8C32 /* DrawView.m */,
+				1CDB1BD820D8C4A9005D8C32 /* DrawViewModel.h */,
+				1CDB1BDA20D8C4A9005D8C32 /* DrawViewModel.m */,
+				1CDB1BD920D8C4A9005D8C32 /* GraffitiBoardView.h */,
+				1CDB1BDD20D8C4A9005D8C32 /* GraffitiBoardView.m */,
+			);
+			path = DrawViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,42 +143,6 @@
 			productReference = 1CDB1BA120D8C3D2005D8C32 /* GraffitiBoardDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1CDB1BB820D8C3D6005D8C32 /* GraffitiBoardDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1CDB1BD020D8C3D6005D8C32 /* Build configuration list for PBXNativeTarget "GraffitiBoardDemoTests" */;
-			buildPhases = (
-				1CDB1BB520D8C3D6005D8C32 /* Sources */,
-				1CDB1BB620D8C3D6005D8C32 /* Frameworks */,
-				1CDB1BB720D8C3D6005D8C32 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1CDB1BBB20D8C3D6005D8C32 /* PBXTargetDependency */,
-			);
-			name = GraffitiBoardDemoTests;
-			productName = GraffitiBoardDemoTests;
-			productReference = 1CDB1BB920D8C3D6005D8C32 /* GraffitiBoardDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1CDB1BC320D8C3D6005D8C32 /* GraffitiBoardDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1CDB1BD320D8C3D6005D8C32 /* Build configuration list for PBXNativeTarget "GraffitiBoardDemoUITests" */;
-			buildPhases = (
-				1CDB1BC020D8C3D6005D8C32 /* Sources */,
-				1CDB1BC120D8C3D6005D8C32 /* Frameworks */,
-				1CDB1BC220D8C3D6005D8C32 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1CDB1BC620D8C3D6005D8C32 /* PBXTargetDependency */,
-			);
-			name = GraffitiBoardDemoUITests;
-			productName = GraffitiBoardDemoUITests;
-			productReference = 1CDB1BC420D8C3D6005D8C32 /* GraffitiBoardDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,14 +154,6 @@
 				TargetAttributes = {
 					1CDB1BA020D8C3D2005D8C32 = {
 						CreatedOnToolsVersion = 9.4;
-					};
-					1CDB1BB820D8C3D6005D8C32 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 1CDB1BA020D8C3D2005D8C32;
-					};
-					1CDB1BC320D8C3D6005D8C32 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 1CDB1BA020D8C3D2005D8C32;
 					};
 				};
 			};
@@ -224,8 +171,6 @@
 			projectRoot = "";
 			targets = (
 				1CDB1BA020D8C3D2005D8C32 /* GraffitiBoardDemo */,
-				1CDB1BB820D8C3D6005D8C32 /* GraffitiBoardDemoTests */,
-				1CDB1BC320D8C3D6005D8C32 /* GraffitiBoardDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,20 +186,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1CDB1BB720D8C3D6005D8C32 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1CDB1BC220D8C3D6005D8C32 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,42 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDB1BDE20D8C4A9005D8C32 /* DrawViewModel.m in Sources */,
+				1CDB1BE020D8C4A9005D8C32 /* GraffitiBoardView.m in Sources */,
 				1CDB1BA920D8C3D2005D8C32 /* ViewController.m in Sources */,
 				1CDB1BB420D8C3D6005D8C32 /* main.m in Sources */,
+				1CDB1BE320D8C89C005D8C32 /* RootNavViewController.m in Sources */,
 				1CDB1BA620D8C3D2005D8C32 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1CDB1BB520D8C3D6005D8C32 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1CDB1BBE20D8C3D6005D8C32 /* GraffitiBoardDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1CDB1BC020D8C3D6005D8C32 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1CDB1BC920D8C3D6005D8C32 /* GraffitiBoardDemoUITests.m in Sources */,
+				1CDB1BDF20D8C4A9005D8C32 /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1CDB1BBB20D8C3D6005D8C32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1CDB1BA020D8C3D2005D8C32 /* GraffitiBoardDemo */;
-			targetProxy = 1CDB1BBA20D8C3D6005D8C32 /* PBXContainerItemProxy */;
-		};
-		1CDB1BC620D8C3D6005D8C32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1CDB1BA020D8C3D2005D8C32 /* GraffitiBoardDemo */;
-			targetProxy = 1CDB1BC520D8C3D6005D8C32 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1CDB1BAA20D8C3D2005D8C32 /* Main.storyboard */ = {
@@ -463,80 +369,6 @@
 			};
 			name = Release;
 		};
-		1CDB1BD120D8C3D6005D8C32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = GraffitiBoardDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "----rp.wang.GraffitiBoardDemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraffitiBoardDemo.app/GraffitiBoardDemo";
-			};
-			name = Debug;
-		};
-		1CDB1BD220D8C3D6005D8C32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = GraffitiBoardDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "----rp.wang.GraffitiBoardDemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraffitiBoardDemo.app/GraffitiBoardDemo";
-			};
-			name = Release;
-		};
-		1CDB1BD420D8C3D6005D8C32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = GraffitiBoardDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "----rp.wang.GraffitiBoardDemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GraffitiBoardDemo;
-			};
-			name = Debug;
-		};
-		1CDB1BD520D8C3D6005D8C32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = GraffitiBoardDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "----rp.wang.GraffitiBoardDemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GraffitiBoardDemo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,24 +386,6 @@
 			buildConfigurations = (
 				1CDB1BCE20D8C3D6005D8C32 /* Debug */,
 				1CDB1BCF20D8C3D6005D8C32 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1CDB1BD020D8C3D6005D8C32 /* Build configuration list for PBXNativeTarget "GraffitiBoardDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1CDB1BD120D8C3D6005D8C32 /* Debug */,
-				1CDB1BD220D8C3D6005D8C32 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1CDB1BD320D8C3D6005D8C32 /* Build configuration list for PBXNativeTarget "GraffitiBoardDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1CDB1BD420D8C3D6005D8C32 /* Debug */,
-				1CDB1BD520D8C3D6005D8C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

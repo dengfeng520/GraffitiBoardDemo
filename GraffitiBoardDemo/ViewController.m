@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DrawView.h"
 
 @interface ViewController ()
+
+///
+@property (strong, nonatomic) DrawView *drowview;
 
 @end
 
@@ -17,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"GraffitiBoardDemo";
+    
+    _drowview = [[DrawView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.view addSubview:_drowview];
 }
 
 
