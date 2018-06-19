@@ -74,15 +74,20 @@
             break;
         case 103:
         {
+            UIImage *photo = [_GraffitiView save];
+            if(self.drowblocks)
+            {
+                self.drowblocks(photo);
+            }
             //保存到相册
-            UIImageWriteToSavedPhotosAlbum([_GraffitiView save], self, @selector(imageSavedToPhotosAlbum:didFinishSavingWithError:contextInfo:), nil);
+            UIImageWriteToSavedPhotosAlbum(photo, self, @selector(imageSavedToPhotosAlbum:didFinishSavingWithError:contextInfo:), nil);
         }
         default:
             break;
     }
 }
 
-//保存图片的回调
+// MARK: - 保存图片的回调
 - (void)imageSavedToPhotosAlbum:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
     NSString *message = @"";

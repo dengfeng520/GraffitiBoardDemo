@@ -27,6 +27,10 @@
    
    
     _drowview = [self drowview];
+    _drowview.drowblocks = ^(UIImage *saveimg) {
+        
+        NSLog(@"==========%@",saveimg);
+    };
     
     _hiddenorshow = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
     UIImage *showImg = [UIImage imageNamed:@"drow_add"];
