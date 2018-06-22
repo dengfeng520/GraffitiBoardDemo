@@ -13,9 +13,11 @@
 ///用来管理画板上所有的路径
 @property(nonatomic,strong) NSMutableArray *paths;
 
+
 @end
 
 @implementation GraffitiBoardView
+
 
 -(NSArray *)paths
 {
@@ -41,6 +43,14 @@
 
 - (void)eraser{
     _lineColor = self.backgroundColor;
+    self.lineWidth = self.lineWidth * 3;
+}
+
+//铅笔
+-(void)openpencil
+{
+    _lineColor = _pencilColor;
+    self.lineWidth = 5.f;
 }
 
 - (UIImage *)save
@@ -71,6 +81,7 @@
     MyUIBezierPath *path = [MyUIBezierPath bezierPath];
     //设置画笔宽度
     if(_lineWidth <= 0){
+        _lineWidth = 5;
         [path setLineWidth:5];
     }else{
         [path setLineWidth:_lineWidth];

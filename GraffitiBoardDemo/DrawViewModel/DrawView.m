@@ -32,7 +32,7 @@
 // MARK: - 清除按钮
 -(void)CreateOperationview
 {
-    NSArray *ImgList = @[@"shut_down",@"Draw_Undo",@"Draw_eraser",@"wancheng"];
+    NSArray *ImgList = @[@"shut_down",@"pencil",@"Draw_Undo",@"Draw_eraser",@"wancheng"];
     
     for(int i = 0;i<ImgList.count;i++)
     {
@@ -44,6 +44,7 @@
         UIImageView *OperationImg = [[UIImageView alloc]initWithFrame:CGRectMake(Operationview.frame.size.width / 2 - 15, Operationview.frame.size.height / 2 - 15, 30, 30)];
         [Operationview addSubview:OperationImg];
         OperationImg.image = [UIImage imageNamed:ImgList[i]];
+       
         
         //-----------------------
         UIButton *OperationBtn = [[UIButton alloc]initWithFrame:Operationview.bounds];
@@ -64,15 +65,21 @@
             break;
         case 101:
         {
-            [_GraffitiView undo];
+            [_GraffitiView openpencil];
+           
         }
             break;
         case 102:
         {
-            [_GraffitiView eraser];
+            [_GraffitiView undo];
         }
             break;
         case 103:
+        {
+            [_GraffitiView eraser];
+        }
+            break;
+        case 104:
         {
             UIImage *photo = [_GraffitiView save];
             if(self.drowblocks)
@@ -104,9 +111,9 @@
 -(void)CreateGraffitiBoardView
 {
     _GraffitiView = [[GraffitiBoardView alloc]initWithFrame:CGRectMake(0, 55,self.frame.size.width , self.frame.size.height - 55)];
-    _GraffitiView.lineWidth = 5.f;
     _GraffitiView.backgroundColor = [UIColor colorWithRed:((float)((0xf0f0f0 & 0xFF0000) >> 16))/255.0f green:((float)((0xf0f0f0 & 0xFF00) >> 8))/255.0f blue:((float)(0xf0f0f0 & 0xFF))/255.0f alpha:1.0f];
     _GraffitiView.lineColor = [UIColor colorWithRed:((float)((0x1b1b1b & 0xFF0000) >> 16))/255.0f green:((float)((0x1b1b1b & 0xFF00) >> 8))/255.0f blue:((float)(0x1b1b1b & 0xFF))/255.0f alpha:1.0f];
+    _GraffitiView.lineWidth = 5.f;
     [self addSubview:_GraffitiView];
 }
 

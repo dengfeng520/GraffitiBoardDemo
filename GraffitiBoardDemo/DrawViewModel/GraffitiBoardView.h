@@ -10,10 +10,12 @@
 
 @interface GraffitiBoardView : UIView
 
-///画笔宽度
-@property(nonatomic, assign) CGFloat lineWidth;
 ///画笔颜色
 @property(nonatomic, strong) UIColor * lineColor;
+///画笔宽度
+@property(nonatomic, assign) CGFloat lineWidth;
+///铅笔颜色
+@property (strong, nonatomic) UIColor *pencilColor;
 ///清除画板
 - (void)clean;
 ///回退上一步
@@ -22,6 +24,8 @@
 - (void)eraser;
 ///保存到相册
 - (UIImage *)save;
+///铅笔
+-(void)openpencil;
 
 @end
 
